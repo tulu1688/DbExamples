@@ -48,7 +48,7 @@ public class SpringDataCassandraApplication implements CommandLineRunner{
     }
 
     public void lookup(){
-        System.out.println("===================Lookup Customers from Cassandra by Firstname===================");
+        System.ou t.println("===================Lookup Customers from Cassandra by Firstname===================");
         List<Customer> peters = customerRepository.findByFirstname("Peter");
         peters.forEach(System.out::println);
 
